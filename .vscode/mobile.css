@@ -1,0 +1,239 @@
+@media screen and (max-width: 767px) {
+    .container {
+      max-width: 396px;
+    
+      /* outline: 1px solid gray; */
+    }
+  
+    .header-list {
+      display: none;
+    }
+    address {
+      display: none;
+    }
+    .header {
+      padding-bottom: 24px;
+    }
+   .open {
+  color: #4d5ae5;
+   }
+  
+    .banner {
+      max-width: 428px;
+      height: 432px;
+      padding-top: 112px;
+      margin-bottom: 96px;
+    }
+    .banner-text {
+      max-width: 320px;
+      margin-bottom: 72px;
+      font-size: 36px;
+      line-height: 1.11;
+    }
+    
+    .customers-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .team-container {
+   padding-left: 0;
+   padding-right: 0;
+    }
+  
+    .feature-list-tytle {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+    }
+    .feature-list-text {
+      font-weight: 500;
+    }
+    .feature-list-item {
+      margin-bottom: 72px;
+    }
+    .feature-list :last-child {
+      margin-bottom: 0;
+    }
+    .feature-list {
+      margin-bottom: 96px;
+    }
+    
+    .team {
+      padding-top: 96px;
+      padding-bottom: 128px;
+    }
+  
+    .team-list {
+      flex-direction: column;
+      gap: 72px;
+      align-items: center;
+    }
+    .team-list-item {
+      width: 267px;
+    }
+    .no-centr {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0;
+    }
+  
+    .customers {
+      padding-top: 96px;
+      padding-bottom: 96px;
+   
+    }
+    .customers-list {
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 72px;
+    
+    }
+  
+    .customers-list-link {
+      width: 190px;
+      height: 88px;
+    }
+  
+    footer {
+      height: 662px;
+      padding: 96px 0;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-link {
+      justify-content: center;
+    }
+    .footer-text {
+      max-width: 268px;
+      margin-bottom: 40px;
+      margin: auto;
+      justify-content: center;
+    }
+      .footer-soc {
+      margin: 0;
+    }
+    .footer-title {
+      margin-top: 72px;
+      text-align: center;
+    }
+    .footer-soc-list {
+      justify-content: center;
+      gap: 16px;
+    }
+    .title-subscribe {
+      margin-top: 72px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .forma-subscribe {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-subscribe {
+      margin-top: 16px;
+    }
+    .header-container {
+      justify-content: space-between;
+    }
+    .mobile-menu-btn {
+      stroke: #2e2f42;
+      border: none;
+      width: 32px;
+      height: 22px;
+      background: transparent;
+    }
+    .mob-menu-close {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 16px;
+      border-radius: 50%;
+      background: #e7e9fc;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border: #2e2f42;
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .mob-container {
+      width: 348px;
+      padding: 40px;
+    }
+  
+    .mob-menu {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      padding: 40px;
+      top: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+    .mobilna-nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .mob-menu-item {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #2e2f42;
+      margin-bottom: 20px;
+    }
+    .mob-menu-item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  
+    .mob-menu-nav {
+      color: #2e2f42;
+    }
+    .mob-menu-tel {
+      display: block;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1.11;
+      text-transform: capitalize;
+      color: #4d5ae5;
+      margin-bottom: 40px;
+    }
+    .mob-menu-mail {
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: #434455;
+      margin-bottom: 48px;
+    }
+  
+    .mob-menu > .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .feature-icon,
+    .feature-list-logo {
+      display: none;
+    }
+    .promo {
+      display: none;
+    }
+    .modal {
+      width: 392px;
+      min-height: 586px;
+    }
+  }
