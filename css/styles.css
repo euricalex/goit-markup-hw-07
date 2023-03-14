@@ -309,7 +309,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.main-list :last-child {
+.main-list:last-child {
   margin-bottom: 0;
 }
 .main-item {
@@ -325,7 +325,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 8px;
@@ -375,7 +375,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px 16px;
+  gap: 72px 24px;
 }
 .secondary-item {
   list-style: none;
@@ -471,7 +471,7 @@ body {
 .box {
   background: #2e2f42;
   padding-top: 96px;
-  padding-bottom: 96px;
+  /* padding-bottom: 96px; */
 }
 .buttons {
   padding-top: 48px;
@@ -574,7 +574,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 .footer-logo-name {
   text-align: center;
@@ -908,6 +908,9 @@ body {
   .header-address {
     display: none;
   }
+  .main-title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1159px) {
   button {
@@ -953,6 +956,13 @@ body {
     margin-left: auto;
   }
   .header-contact {
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 0.8;
+/* identical to box height, or 117% */
+letter-spacing: 0.04em;
     text-decoration: none;
     color: var(--font-description-color);
     transition: color var(--hover-transition);
