@@ -380,25 +380,13 @@ body {
 @media screen and (min-width: 796px) {
   .main-second-title {
     width: 356px;
-    color: var(--font-description-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    /* identical to box height, or 150% */
   
-    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-third-title {
 width: 264px;
-color: var(--font-description-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    /* identical to box height, or 150% */
-  
-    letter-spacing: 0.02em;
+
   }
   
 }
@@ -436,12 +424,15 @@ color: var(--font-description-color);
 /* .team-container {
   max-width: 294px;
 } */
-.secondary-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 72px 24px;
-}
+
+  .secondary-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+
+
 .secondary-item {
   list-style: none;
   width: 264px;
@@ -1109,7 +1100,7 @@ letter-spacing: 0.04em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px 16px;
+    gap: 72px 24px;
   }
   .customers-list {
     gap: 72px 24px;
