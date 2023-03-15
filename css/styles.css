@@ -43,9 +43,7 @@ body {
   font-family: "Roboto";
   color: var(--primary-color);
 }
-.no-scroll {
-  overflow: hidden;
-}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -113,129 +111,163 @@ body {
       url(../images/people-office-mobile-2x.jpg);
   }
 }
-.menu-open {
-  border: none;
-  background-color: #ffffff;
-}
-.open-menu-icon {
-  stroke: var(--primary-color);
-  display: block;
-}
-.mob-menu-container {
-  padding-left: 40px;
-  padding-right: 24px;
-}
-.mob-menu {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  transform: translateX(100%);
-  transition: transform var(--hover-transition);
-}
-.mob-menu.is-open {
-  transform: translateX(0);
+@media screen and (max-width:768px) {
+  .menu-open {
+
+    border: none;
+    background-color: #ffffff;
+  }
+  .open-menu-icon {
+    stroke: var(--primary-color);
+    display: block;
+  }
+  .mob-menu-container {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 24px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    /* transform: translateX(100%); */
+    transition: transform var(--hover-transition);
+  }
+  .mob-menu.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: var(--hover-transition);
+  }
+  .menu-close:hover,
+  .menu-close:focus {
+    background-color: var(--hover-color);
+    fill: #ffffff;
+    border: none;
+  }
+  .menu > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+  }
+  
+  .close-modal-icon {
+  
+  }
+  .mob-menu-list {
+    /* padding-top: 80px; */
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11s;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-color);
+  }
+  .mob-menu-item {
+    margin-bottom: 40px;
+  }
+  .mob-menu-item:last-child {
+    margin-bottom: 0;
+  }
+  .mob-menu-item {
+  }
+  .mob-item {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--hover-transition);
+  }
+  .mob-item:hover,
+  .mob-item:focus {
+    color: var(--hover-color);
+  }
+  .mob-menu-contacts {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11s;
+    letter-spacing: 0.02em;
+  }
+  .mob-menu-tel {
+    margin-bottom: 40px;
+  }
+  .mob-menu-tel-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  .mob-menu-email {
+    margin-bottom: 48px;
+  }
+  .mob-menu-email-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+  transition: var(--hover-transition);
+    letter-spacing: 0.02em;
+  
+    /* SLATE */
+  
+    color: var(--font-description-color);
+  }
+  .mob-menu-email-link:hover,
+  .mob-menu-email-link:focus {
+    color: var(--secondary-color); 
+  }
+  .mob-menu-soc-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 56px;
+    margin-bottom: 40px;
+  
+  }
+  .mob-menu-soc-item {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+  }
+  .mob-menu-soc-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    transition: var(--hover-transition);
+  }
+  .mob-menu-soc-link:hover, 
+  .mob-menu-soc-link:focus {
+  background-color: var(--hover-color);
+  }
+  .mob-menu-soc-icon {
+    fill: #f4f4fd;
+  }
 }
 
-.menu-close {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-}
-.mob-menu > .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-y: auto;
-}
-.close-modal-icon {
-}
-.mob-menu-list {
-  list-style: none;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11s;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--primary-color);
-}
-.mob-menu-item {
-  margin-bottom: 40px;
-}
-.mob-menu-item:last-child {
-  margin-bottom: 0;
-}
-.mob-menu-item {
-}
-.mob-item {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.mob-menu-contacts {
-  list-style: none;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11s;
-  letter-spacing: 0.02em;
-}
-.mob-menu-tel {
-  margin-bottom: 40px;
-}
-.mob-menu-tel-link {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-.mob-menu-email {
-  margin-bottom: 48px;
-}
-.mob-menu-email-link {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  /* identical to box height, or 120% */
-
-  letter-spacing: 0.02em;
-
-  /* SLATE */
-
-  color: var(--font-description-color);
-}
-.mob-menu-soc-list {
-  display: flex;
-  justify-content: flex-start;
-  gap: 56px;
-}
-.mob-menu-soc-item {
-  list-style: none;
-  width: 40px;
-  height: 40px;
-}
-.mob-menu-soc-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-}
 .headline {
   color: var(--font-white-color);
   font-weight: 700;
@@ -749,6 +781,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
 }
 
 .modal-header {
