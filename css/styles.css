@@ -122,7 +122,7 @@ body {
     display: block;
   }
   .mob-menu-container {
-    position: relative;
+    /* position: relative; */
     padding-left: 40px;
     padding-right: 24px;
   }
@@ -242,7 +242,7 @@ body {
     justify-content: flex-start;
     gap: 56px;
     margin-bottom: 40px;
-  
+ 
   }
   .mob-menu-soc-item {
     list-style: none;
