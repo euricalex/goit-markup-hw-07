@@ -762,6 +762,11 @@ width: 264px;
   font-size: 16px;
   line-height: 1.5;
   gap: 16px;
+  transition: var(--hover-transition);
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: var(--hover-color);
 }
 .subcribe-icon {
   fill: var(--font-white-color);
@@ -1002,6 +1007,7 @@ width: 264px;
   }
 
   .item {
+   padding: 10px;
     color: var(--primary-color);
     text-decoration: none;
     transition: color var(--hover-transition);
@@ -1234,11 +1240,7 @@ letter-spacing: 0.04em;
   .header-contact:hover {
     color: var(--hover-color);
   }
-  .item {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color var(--hover-transition);
-  }
+  
   .headline {
     font-weight: 700;
     font-size: 56px;
@@ -1292,6 +1294,7 @@ letter-spacing: 0.04em;
     display: block;
   }
   .item {
+    padding: 10px;
     color: var(--primary-color);
     text-decoration: none;
     transition: color var(--hover-transition);
