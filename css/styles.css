@@ -945,15 +945,8 @@ width: 264px;
   border: none;
   fill: #f4f4fd;
 }
-/*}
-.policy-text::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid var(--primary-color);
-  border-radius: 2px;
-  margin-right: 8px;
-}
+/*
+
 .policy-check:checked + .policy-text::before {
   background-color: var(--hover-color);
   border: none;
